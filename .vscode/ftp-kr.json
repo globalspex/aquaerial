@@ -1,0 +1,19 @@
+{
+    "host": "semidedi03-ga.privatesystems.net",
+    "username": "developers@gxtesting.com",
+    "password": "ul#oRUDe9@P1r*kt",
+    "remotePath": "/public_html/aquaerial/wp-content/themes/globalspex/",
+    "protocol": "ftp",
+    "port": 21,
+    "secure": true,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    "uploadOnSave": true,
+    "autoSave": true,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}

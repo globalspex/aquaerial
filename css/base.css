@@ -1,0 +1,400 @@
+/* 
+This file functions as a foundational framework, 
+setting global styles, CSS variables, 
+and utilities that all components 
+and themes rely on. 
+Think of it as the structural 
+core of our visual system. */
+
+/* Version: 1.0 */
+
+body, button, input, select, textarea {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+
+a, i {
+   color: var(--accent-color);
+   transition: all .2s linear;
+   transition-property: all;
+   transition-duration: 0.2s;
+   transition-timing-function: linear;
+   transition-delay: 0s;
+   outline: 0!important;
+}
+
+p {
+   color: var(--dark);
+}
+
+.single .nav-links .nav-previous, 
+.single .nav-links .nav-next {
+	color: var(--secondary-color);
+}
+
+::selection {
+	background-color: var(--accent-color);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--dark)!important;
+}
+
+a {
+	color: var(--accent-color);
+}
+
+#ast-scroll-top {
+	background-color: var(--accent-color);
+}
+
+.fl-rich-text a {
+	text-decoration: underline;
+	underline-text-position: under;
+}
+
+p {
+	color: var(--dark);
+}
+
+.entry-content h1, 
+.entry-content h2, 
+.entry-content h3, 
+.entry-content h4, 
+.entry-content h5, 
+.entry-content h6, 
+h1.fl-heading *,
+h2.fl-heading *,
+h3.fl-heading *,
+h4.fl-heading *,
+h5.fl-heading * {
+	color: var(--dark);
+}
+
+.lg-heading,
+.lg-heading * {
+	font-size: 150%!important;
+}
+
+.fl-heading a {
+	text-decoration: none;
+}
+
+.fl-heading strong,
+.fl-heading .decorative-heading {
+	font-weight: bold;
+}
+/* To make elements stay on top of others when overlapping, use this class */
+.z-index {
+	position: relative;
+	z-index: 99!important;
+}
+
+header .fl-row-content-wrap {
+	background: var(--light);
+	box-shadow: var(--box-shadow);
+	transition: all .2s linear;
+   transition-property: all;
+   transition-duration: 0.2s;
+   transition-timing-function: linear;
+   transition-delay: 0s;
+   outline: 0!important;
+}
+
+body:not(.single-fl-theme-layout) .fl-builder-content[data-overlay="1"]:not(.fl-theme-builder-header-scrolled):not([data-overlay-bg="default"]) .fl-row-content-wrap, body:not(.single-fl-theme-layout) .fl-builder-content[data-overlay="1"]:not(.fl-theme-builder-header-scrolled):not([data-overlay-bg="default"]) .fl-col-content a {
+	color: var(--light);
+}
+
+header a {
+	color: var(--dark);
+}
+
+header .menu > li.current-menu-item > .fl-has-submenu-container > a,
+header .menu > li > .fl-has-submenu-container:hover > a, 
+header .menu > li > a:hover,
+header .menu > li > a:focus,
+header .menu > li > a:active,
+header .menu > li.current-menu-item > a,
+header .sub-menu {
+}
+
+header .fl-menu .fl-menu-toggle:before {
+	/** Optional: decrease size of the arrow 
+	----
+	width: 6px !important;
+	height: 6px !important;
+	---- **/
+	border-color: var(--dark) !important;
+	color: var(--dark) !important;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+}
+
+header .fl-icon-wrap i,
+header .fl-icon-wrap a {
+	color: var(--accent-color);
+}
+
+header a.fl-button {
+	background: var(--accent-color);
+}
+
+
+header .fl-button * {
+	color: var(--light);
+}
+
+.fl-theme-builder-header-scrolled .fl-row-content-wrap {
+	box-shadow: var(--box-shadow);
+}
+
+.top-header .fl-row-content-wrap {
+	background: var(--dark);
+}
+
+footer .fl-row-content-wrap {
+	background: var(--dark);
+}
+
+footer .fl-rich-text,
+footer .fl-rich-text *,
+footer .fl-menu a,
+footer .fl-icon *,
+footer .fl-icon-text * {
+	color: var(--light);
+}
+
+footer .fl-module-icon .fl-module-content {
+	margin-bottom: 0!important;
+}
+
+footer .fl-heading *,
+footer .fl-heading {
+	color: var(--light)
+}
+
+footer .fl-button {
+	background-color: var(--accent-color);
+}
+
+footer .fl-button * {
+	color: var(--light);
+}
+
+.sub-footer .fl-row-content-wrap {
+	background: var(--accent-color);
+
+.sub-footer .fl-rich-text * {
+	color: var(--dark)
+}
+
+/* Rules that can be applied to all BB buttons */
+
+.fl-button {
+	padding: 10px 20px;
+}
+
+.fl-button * {
+	color: var(--light);
+}
+
+input[type="button"], input[type="submit"] {
+	padding: 10px 20px;
+}
+
+/* Default Button */
+
+
+.default-button .fl-button {
+	background: var(--dark)!important;
+}
+
+/* Use * to color of the button's text */
+.default-button .fl-button * {
+	color: var(--light)!important;
+}
+
+.default-button .fl-button:hover {
+	background: var(--accent-color)!important;
+}
+
+/* Accent Button */
+.accent-button .fl-button {
+	background: var(--accent-color)!important;
+	border: 1px solid var(--accent-color)!important;
+}
+
+/* Changes color of the button's text */
+.accent-button .fl-button * {
+	color: var(--light)!important;
+}
+
+.accent-button .fl-button:hover {
+	background: var(--dark)!important;
+	border: 1px solid var(--dark)!important;
+}
+
+/* Changes color of the button on hover */
+.accent-button .fl-button:hover * {
+
+}
+
+/**** Col and Row effects ****/
+
+/* Adds a round effect to the col */
+.round-col .fl-col-content {
+	border-radius: 20px;
+}
+
+/* Adds a shadow to a column */
+
+.shadow-col .fl-col-content {
+	box-shadow: var(--box-shadow)!important;
+}
+
+/* Adds a shadow to the entire row */
+.shadow-row .fl-row-content-wrap {
+	box-shadow: var(--box-shadow);
+}
+
+/* Adds a decoration to the top of the column - 
+This is an example of how to add decorations to columns or other modules */
+.accent-border-top .fl-col-content {
+	border-top: 5px solid var(--accent-color);
+}
+
+/*** ROW Backgrounds ***/
+
+.accent-bg .fl-row-content-wrap,
+.accent-bg .fl-col-content {
+	background: var(--accent-color);
+}
+
+.accent-bg .fl-rich-text *,
+.accent-bg .fl-heading * {
+}
+
+.secondary-bg .fl-row-content-wrap,
+.secondary-bg .fl-col-content {
+	background: var(--secondary-color);
+}
+
+.secondary-bg .fl-rich-text *,
+.secondary-bg .fl-heading * {
+}
+
+.dark-bg .fl-row-content-wrap,
+.dark-bg .fl-col-content {
+	background: var(--dark);
+}
+
+.dark-bg .fl-rich-text *,
+.dark-bg .fl-heading * {
+	color: var(--light);
+}
+
+.dark-transp-bg .fl-row-content-wrap,
+.dark-transp-bg .fl-col-content {
+	background: var(--dark-transp);
+}
+
+.dark-transp-bg .fl-rich-text *,
+	color: var(--light);
+}
+
+/* Use this to change the overlay color of rows with a bg image */
+.dark-overlay-bg .fl-row-content-wrap:after,
+.dark-overlay-bg .fl-col-content:after {
+	background: var(--dark-transp);
+}
+
+.dark-overlay-bg .fl-rich-text *,
+.dark-overlay-bg .fl-heading * {
+	color: var(--light);
+}
+
+.gray-bg .fl-row-content-wrap,
+.gray-bg .fl-col-content {
+	background: var(--gray);
+}
+
+.light-bg .fl-row-content-wrap,
+.light-bg .fl-col-content {
+	background: var(--light);	
+}
+
+/* Remove underlines from header logo area text */
+.fl-page-header-logo a {
+	text-decoration: none;
+}
+
+.entry-header {
+	display: none!important;
+}
+
+.subheader .fl-row-content-wrap {
+	padding: var(--hero-padding);
+}
+
+.subheader .fl-row-content-wrap:after {
+	background: var(--dark-transp);
+}
+
+.subheader .fl-heading *,
+.subheader .fl-heading {
+	color: var(--light);
+}
+
+.subheader h1.fl-heading *,
+.subheader h1.fl-heading,
+.hero h1.fl-heading *,
+.hero h1.fl-heading {
+	font-size: var(--h1-hero-size);
+}
+
+.hero .fl-row-content-wrap {
+	padding: var(--hero-padding);
+}
+
+.hero .fl-module-heading {
+	margin-bottom: 0!important;
+}
+
+.hero .fl-row-content-wrap:after {
+	background: var(--dark-transp);
+}
+
+.hero .fl-heading *,
+.hero .fl-heading,
+.hero .fl-rich-text * {
+	color: var(--light);
+}
+
+blockquote, 
+blockquote p {
+	 text-align: center;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: var(--dark);
+    font-style: unset;
+}
+
+blockquote cite {
+	 color: var(--accent-color);
+    font-weight: 900;
+    font-size: 16px !important;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-style: unset !important;
+    display: block;
+    text-transform: uppercase;
+    margin-top: 20px!important;
+}
+
+/* Form Styles */
+
+.gform_required_legend {
+	display: none;
+}
