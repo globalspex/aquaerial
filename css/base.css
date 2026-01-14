@@ -125,8 +125,8 @@ header .fl-menu .fl-menu-toggle:before {
 	width: 6px !important;
 	height: 6px !important;
 	---- **/
-	border-color: var(--dark) !important;
-	color: var(--dark) !important;
+	border-color: var(--light);
+	color: var(--light);
 	border-right: 1px solid;
 	border-bottom: 1px solid;
 }
