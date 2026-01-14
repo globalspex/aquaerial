@@ -70,12 +70,14 @@ Template: astra
    background: var(--dark);
    border-radius: var(--default-border-radius)!important;
    box-shadow: var(--box-shadow)!important;
+   text-align: center;
 }
 
 .fl-button * {
    text-transform: uppercase;
    color: var(--light);
    font-weight: 700!important;
+   text-align: center;
 }
 
 .gform_button {
@@ -139,7 +141,7 @@ header .fl-row-content-wrap {
 
 .top-header .fl-row-content-wrap {
    background: var(--dark-transp)!important;
-   padding: 0!important;
+   padding: 5px!important;
 }
 
 .top-header .fl-html * {
@@ -177,6 +179,19 @@ header table th,
 header table td {
    border: none!important;
    padding: 0!important;
+}
+
+header table {
+   width: 300px;
+}
+
+header table td {
+   padding-left: 0!important;
+   max-width: 20px;
+}
+
+header .fl-module-html {
+  margin-left: 0!important;
 }
 
 .pp-advanced-menu-mobile-toggle .pp-hamburger .pp-hamburger-box .pp-hamburger-inner, .pp-advanced-menu-mobile-toggle .pp-hamburger .pp-hamburger-box .pp-hamburger-inner:before, .pp-advanced-menu-mobile-toggle .pp-hamburger .pp-hamburger-box .pp-hamburger-inner:after {
@@ -564,7 +579,7 @@ footer .fl-icon i:before {
 }
 
 .content-row-about_1 .fl-module-photo {
-   margin: -60px 5px -30px -80px;
+   margin: 0px 5px -30px -80px;
 }
 
 .content-row-about_1 .fl-module-heading,
@@ -615,6 +630,11 @@ footer .fl-icon i:before {
 .content-row-simple_1 .fl-row-content-wrap {
    padding: var(--lg-padding);
    background-color: var(--light)!important;
+}
+
+.content-row-simple_1 img {
+   border-radius: var(--default-border-radius);
+   box-shadow: var(--box-shadow);
 }
 
 
@@ -886,6 +906,11 @@ footer .fl-icon i:before {
 }
 
 @media screen and (max-width: 1200px) {
+
+   .top-header .fl-row-content-wrap { 
+      padding: 0!important;
+   }
+
   .content-row-about_1 .fl-photo img {
     max-width: 450px!important;
   }
@@ -903,24 +928,45 @@ footer .fl-icon i:before {
    --h1-hero-size: 40px;
    --lg-col-padding: 60px 30px 60px 30px;
    --hero-padding: 330px 30px 180px 30px;
+   --lg-padding: 60px 30px 60px 30px;
  }
 
  header .fl-module {
    margin-bottom: 0!important;
  }
 
+ header .fl-module-photo,
+ header .fl-module-photo .fl-module {
+   margin-top: 0!important;
+   margin-left: 0!important;
+   margin-right: 0!important;
+}
+
+ header .fl-module-pp-advanced-menu,
+ header .fl-module-pp-advanced-menu .fl-module-content {
+   margin-right: 5px!important
+ }
+
+header .pp-advanced-menu-mobile {
+   justify-content: end!important;
+}
+
  header .fl-module-button,
  header .fl-module-button .fl-module {
+   margin-top: 5px!important;
+ }
 
+ header .fl-photo-img {
+   width: 150px!important;
+ }
+
+ header .fl-button * {
+   font-size: 14px!important;
  }
 
  .menu-link,
  .menu-link * {
    color: var(--light)!important;
- }
- 
- .content-row-about_1 .fl-module-photo {
-   margin: -40px 40px 60px 40px;
  }
 
  .content-row-about_1 .fl-photo img {
@@ -951,6 +997,18 @@ footer .fl-icon i:before {
  .phone-number-highlight .fl-heading,
  .phone-number-highlight .fl-heading * {
    font-size: 30px!important;
+ }
+
+ .cta-content-middle_1 .fl-row-content-wrap { 
+   margin-top: 0!important;
+ }
+
+ .content-row-about_1 .fl-photo img {
+    max-width: 350px!important;
+  }
+
+ .content-row-about_1 .fl-module-photo {
+   margin: -20px 20px 20px 20px!important;
  }
 
 }
