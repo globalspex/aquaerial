@@ -637,7 +637,6 @@ footer .fl-icon i:before {
    box-shadow: var(--box-shadow);
 }
 
-
 .main-heading.fl-heading,
 .main-heading.fl-heading * {
    text-transform: uppercase!important;
@@ -927,7 +926,7 @@ footer .fl-icon i:before {
  :root {
    --h1-hero-size: 40px;
    --lg-col-padding: 60px 30px 60px 30px;
-   --hero-padding: 330px 30px 180px 30px;
+   --hero-padding: 280px 30px 140px 30px;
    --lg-padding: 60px 30px 60px 30px;
  }
 
@@ -953,7 +952,7 @@ header .pp-advanced-menu-mobile {
 
  header .fl-module-button,
  header .fl-module-button .fl-module {
-   margin-top: 5px!important;
+   margin-top: 30px!important;
  }
 
  header .fl-photo-img {
