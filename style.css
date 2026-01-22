@@ -18,6 +18,8 @@ Template: astra
 	--light: #fff;
 	--gray: #f3f1f1;
    --dark-gray: #b5b5b5;
+   --green: #00c896;
+   --red: #f3616d;
    --letter-spacing: 2px;
 	--dark-transp: rgba(0,0,0,0.68);
    --light-transp: rgba(255,255,255,0.78);
@@ -144,9 +146,17 @@ header .fl-row-content-wrap {
    padding: 5px!important;
 }
 
-.top-header .fl-html * {
+.top-header .fl-html *:not(font) {
    color: var(--light)!important;
    font-family: "Raleway", sans-serif!important;
+}
+
+.top-header font[color="green"] {
+  color: var(--green) !important;
+}
+
+.top-header font[color="red"] {
+  color: var(--red) !important;
 }
 
 header .fl-button {
