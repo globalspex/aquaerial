@@ -149,6 +149,7 @@ header .fl-row-content-wrap {
 .top-header .fl-html *:not(font) {
    color: var(--light)!important;
    font-family: "Raleway", sans-serif!important;
+   text-align: center!important;
 }
 
 .top-header font[color="green"] {
