@@ -3,7 +3,7 @@
 */
 
 /* ------- COMPONENT: Hero Gradient 1 
----------- Notion: https://noto.li/qliWxn --------------------- */
+---------- Notion: https://noto.li/qliWxn -------------------- */
 
 .hero_gradient_1 .fl-row-content {
    max-width: var(--md-width);
@@ -53,7 +53,7 @@
 }
 
 /* ------- COMPONENT: Content Row with Services 1
----------- Notion: --------------------- */
+---------- Notion: https://noto.li/8YBoyQ --------------------- */
 .content-row-with-services_1 .fl-row-content-wrap {
    padding: var(--lg-padding);
 }
@@ -121,7 +121,6 @@
    background: var(--dark) !important;
 }
 
-
 .content-row-with-services_1 .fl-button {
    background: var(--accent-color) !important;
 }
@@ -131,7 +130,7 @@
 }
 
 /* ------- COMPONENT: Content Row About 1
----------- Notion: --------------------- */
+---------- Notion: https://noto.li/ejmEoG --------------------- */
 .content-row-about_1 .fl-row-content-wrap {
    padding: var(--lg-padding);
 }
@@ -220,7 +219,6 @@
    padding-right: unset;
 }
 
-
 @media screen and (max-width: 1200px) {
 
    .content-row-about_1 .fl-photo img {
@@ -246,7 +244,7 @@
 }
 
 /* ------- COMPONENT: Content Row Callout 1
----------- Notion: --------------------- */
+---------- Notion: https://noto.li/ElvNCq --------------------- */
 .content-row-callout_1 .fl-row-content-wrap {
    padding: var(--lg-padding);
    background: var(--dark);
@@ -298,7 +296,7 @@
 }
 
 /* ------- COMPONENT: CTA Content Middle 1
----------- Notion: --------------------- */
+---------- Notion: https://noto.li/HMJD9H --------------------- */
 
 .cta-content-middle_1 .fl-row-content {}
 
@@ -374,14 +372,6 @@
    box-shadow: var(--box-shadow);
 }
 
-.main-heading.fl-heading,
-.main-heading.fl-heading * {
-   text-transform: uppercase !important;
-   font-weight: 800 !important;
-   font-size: 50px !important;
-   text-align: center !important;
-}
-
 .content-row-simple_1 .fl-heading,
 .content-row-simple_1 .fl-heading * {
    text-transform: uppercase !important;
@@ -404,13 +394,8 @@
    box-shadow: var(--box-shadow) !important;
 }
 
-.content-row-simple_2 .fl-button * {
-   color: var(--light) !important;
-   font-weight: 600 !important;
-}
-
 /* ------- COMPONENT: Content Row Simple 2
----------- Notion: --------------------- */
+---------- Notion: https://noto.li/ZB2LcY --------------------- */
 
 .content-row-simple_2 .fl-row-content-wrap {
    padding: var(--lg-padding);
@@ -454,7 +439,7 @@
 }
 
 /* ------- COMPONENT: Content Row Simple 3
----------- Notion: --------------------- */
+---------- Notion: https://noto.li/BqeICA --------------------- */
 .content-row-simple_3 .fl-row-content-wrap {
    padding: var(--lg-padding);
    background-color: var(--light) !important;
